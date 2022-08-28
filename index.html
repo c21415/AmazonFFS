@@ -18,13 +18,13 @@
   </a>
   <script type="text/javascript">
     document.getElementById('LoginWithAmazon').onclick = function() {
-        options = {}
+        options = {popup='false'}
         options.scope = 'profile';
         options.scope_data = {
             'profile' : {'essential': false}
         };
         amazon.Login.authorize(options,
-            'https://c21415.github.io/handle_login.php');
+            'https://c21415.github.io/register');
         return false;
     };
 </script>
